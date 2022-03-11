@@ -1,0 +1,73 @@
+.textemulticolore {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+    width: auto;
+}
+
+.box {
+    background-color: mediumorchid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    transform: translate(-50%, 0px);
+    padding: 5px;
+    text-align: center;
+}
+
+.scene {
+    margin: 40px 0;
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 4px auto;
+    perspective: 100px;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.carousel__cell {
+    position: absolute;
+    top: 0px;
+    border: 2px solid black;
+    color: white;
+    width: 380px;
+    height: 450px;
+    left: 10px;
+    text-align: center;
+    background: magenta;
+    opacity: 0.1;
+}
+
+.carousel__cell:nth-child(1) {
+    transform: rotateY( 0deg) translateZ(288px);
+    opacity: 1;
+}
+
+.carousel__cell:nth-child(2) {
+    transform: rotateY( 72deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(3) {
+    transform: rotateY( 144deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(4) {
+    transform: rotateY(216deg) translateZ(288px);
+}
+
+.carousel__cell:nth-child(5) {
+    transform: rotateY(288deg) translateZ(288px);
+}
